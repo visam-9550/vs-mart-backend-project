@@ -1,7 +1,7 @@
 const ECommerceUserModel = require("../Models/UserModel")
 const jwt = require("jsonwebtoken")
 const {SECRET_KEY} = process.env
-const bcrypt = require("bcrypt")
+const bcrypt = require("bcryptjs")
 
 const CreateUserHandler = async(req, res) =>{
     try{
